@@ -15,14 +15,14 @@ public class Job {
     private CoreCompetency coreCompetency;
 
     public Job() {
-        id = nextId;
+        id = nextId;  //constructor no args
         nextId++;
     }
 
     public Job(String aName, Employer aEmployer, Location aLocation,
                PositionType aPositionType, CoreCompetency aSkill) {
 
-        this();
+        this(); //call the constructor above to initialize the id
 
         name = aName;
         employer = aEmployer;
@@ -74,7 +74,12 @@ public class Job {
 
     public int getId() {
         return id;
-    }
+    } //don't I need a setter here, too?
+
+//    public void setId(int id) {
+//        this.id = id;
+//    }  //don't I need a setter here too?
+
 
     @Override
     public boolean equals(Object o) {
