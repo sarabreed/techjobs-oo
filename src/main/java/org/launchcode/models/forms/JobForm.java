@@ -24,9 +24,9 @@ public class JobForm {
 
     private int locationId;  //mimic employerId per tech jobs instructions. Should this also be not null???
 
-    private int positionTypeId;
-
     private int coreCompetencyId;
+
+    private int positionTypeId;
 
     /*
         TODO #3 - Included other fields needed to create a job,
@@ -48,7 +48,7 @@ public class JobForm {
         */
 
         employers = jobData.getEmployers().findAll();
-        locations = jobData.getLocations().findAll();  //replicate the employers list to get all
+        locations = jobData.getLocations().findAll();  //replicate the code above from employers list to get all locations
         coreCompetencies = jobData.getCoreCompetencies().findAll();
         positionTypes = jobData.getPositionTypes().findAll();
 
@@ -103,7 +103,7 @@ public class JobForm {
         this.positionTypes = positionTypes;
     }
 
-    //create getters and seeters for new id fields
+    //create getters and seeters for all new id fields
 
     public int getLocationId() {
         return locationId;

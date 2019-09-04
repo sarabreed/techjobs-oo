@@ -37,15 +37,17 @@ public class JobController {
     }
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
-    public String add(Model model, @Valid JobForm jobForm, Errors errors) {
-
-//        JobForm newJob = new JobForm(jobData);
+    public String add(Model model,  @Valid JobForm jobForm, Errors errors) {
 
         // TODO #6 - Validate the JobForm model, and if valid, create a
         // new Job and add it to the jobData data store. Then
         // redirect to the job detail view for the new Job.
 
-        return "";
+        //do we need to your @RequestParam or @PathVariable  -- review video
+        // https://education.launchcode.org/skills-back-end-java/videos/intro-to-spring-boot-routes/
+        //also look at Mike's line up card Add player
+
+        return "redirect:";
 
     }
 }
