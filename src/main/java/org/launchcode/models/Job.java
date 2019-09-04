@@ -74,11 +74,11 @@ public class Job {
 
     public int getId() {
         return id;
-    } //don't I need a setter here, too?
+    } //don't I need a setter here, too?  creating setter as back up
 
-//    public void setId(int id) {
-//        this.id = id;
-//    }  //don't I need a setter here too?
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
     @Override
