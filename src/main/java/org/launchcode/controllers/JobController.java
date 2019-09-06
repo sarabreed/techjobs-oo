@@ -57,7 +57,6 @@ public class JobController {
                 jobData.getCoreCompetencies().findById(jobForm.getCoreCompetencyId())
         );
 
-
 //                String jobName = jobForm.getName();
 //                Employer jobEmp = jobData.getEmployers().findById(jobForm.getEmployerId);
 //                Location jobLoc = jobData.getLocations().findById(jobForm.getLocationId);
@@ -75,5 +74,6 @@ public class JobController {
         // review https://education.launchcode.org/skills-back-end-java/videos/intro-to-spring-boot-routes/ this has redirect info
 
         return "redirect:/job?id=" + newJob.getId();
+
     }
 }
